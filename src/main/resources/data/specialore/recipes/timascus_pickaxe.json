@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "specialore:titanium_ingot"
+    },
+    "X": {
+      "item": "specialore:timascus_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "specialore:timascus_pickaxe"
+  }
+}

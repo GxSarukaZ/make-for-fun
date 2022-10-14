@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "specialore:be_the_one_catalyst"
+    },
+    "X": {
+      "item": "specialore:reinforced_timascus_sword"
+    },
+    "C": {
+      "item": "specialore:verinated_catalyst"
+    }
+  },
+  "pattern": [
+    "C#C",
+    "#X#",
+    "C#C"
+  ],
+  "result": {
+    "item": "specialore:reinforced_timascus_sword_50"
+  }
+}

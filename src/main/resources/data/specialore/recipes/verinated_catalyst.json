@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "specialore:verinated_catalyst"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    },
+    "C": {
+      "item": "specialore:be_the_one_catalyst"
+    }
+  },
+  "pattern": [
+    "CXC",
+    "C#C",
+    "CXC"
+  ],
+  "result": {
+    "item": "specialore:verinated_catalyst"
+  }
+}

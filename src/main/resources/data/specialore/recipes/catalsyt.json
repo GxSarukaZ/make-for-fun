@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:nether_star"
+    },
+    "X": {
+      "item": "specialore:crystal"
+    },
+    "C": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "CXC",
+    "X#X",
+    "CXC"
+  ],
+  "result": {
+    "item": "specialore:catalyst"
+  }
+}

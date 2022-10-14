@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "specialore:item/dragon_valkyrie_sword"
+  }
+}

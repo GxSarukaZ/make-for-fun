@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "specialore:item/be_the_one_catalyst"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "specialore",
+  "version": "${version}",
+
+  "name": "Minerian Mod",
+  "description": "I Added Special Ore To Minecraft!!",
+  "authors": [
+    "AnodizeX!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/specialore/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.anodizex.specialore.SpecialOreMod"
+    ]
+  },
+  "mixins": [
+    "specialore.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14",
+    "fabric": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

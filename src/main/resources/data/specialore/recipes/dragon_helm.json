@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "specialore:timascus_helmet"
+    },
+    "X": {
+      "item": "specialore:dragonflux"
+    },
+    "C": {
+      "item": "specialore:dragon_catalyst"
+    }
+  },
+  "pattern": [
+    "CXC",
+    "X#X",
+    "CXC"
+  ],
+  "result": {
+    "item": "specialore:dragon_timascus_helmet"
+  }
+}

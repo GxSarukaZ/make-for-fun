@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "specialore:reinforced_catalyst"
+    },
+    "X": {
+      "item": "specialore:midnight_catalyst"
+    }
+  },
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "result": {
+    "item": "specialore:be_the_one_catalyst"
+  }
+}

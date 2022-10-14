@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "specialore:reinforced_catalyst"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    },
+    "C": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "CXC",
+    "C#C",
+    "CXC"
+  ],
+  "result": {
+    "item": "specialore:midnight_catalyst"
+  }
+}

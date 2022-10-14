@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "specialore:catalyst"
+    },
+    "X": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "item": "specialore:reinforced_catalyst"
+  }
+}

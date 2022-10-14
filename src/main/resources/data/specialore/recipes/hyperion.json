@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "specialore:be_the_one_catalyst"
+    },
+    "X": {
+      "item": "specialore:reinforced_timascus_sword"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "item": "specialore:hyperion_timascus_sword"
+  }
+}
