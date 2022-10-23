@@ -148,6 +148,21 @@ public class ModItems {
     public static final Item DRAGON_HANDLE =registerItem("dragon_handle",
             new Item(new FabricItemSettings().group(ModItemGroup.CATALYST).rarity(Rarity.RARE).maxCount(1)));
 
+    public static final Item WARDEN_TENDRILL = registerItem("warden_tendrill",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC).rarity(Rarity.EPIC).maxCount(1)));
+
+    public static final Item WARDENFLUX = registerItem("wardenflux",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC).rarity(Rarity.EPIC).maxCount(1)));
+
+    public static final Item WITHER_CATALYST = registerItem("wither_catalyst",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC).rarity(Rarity.RARE).maxCount(64)));
+
+    public static final Item DOMINUS = registerItem("dominus",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC).rarity(Rarity.EPIC).maxCount(2)));
+
+    public static final Item VALKYRIE = registerItem("valkyrie",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC).rarity(Rarity.EPIC).maxCount(2)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM,new Identifier(SpecialOreMod.MOD_ID, name),item);
     }
