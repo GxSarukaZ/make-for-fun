@@ -17,15 +17,6 @@ public class ModBlocks {
     public static final Block TIMASCUS_BLOCK = registerBlock("timascus_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4F).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.SPECIALBLOCK);
 
-    public static final Block SCULK_SUMMONING_EYE = registerBlock("sculk_summoning_eye",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4F).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.SPECIALBLOCK);
-
-    public static final Block SCULK_COMPACT_EYE = registerBlock("sculk_compact_eye",
-            new Block(FabricBlockSettings.of(Material.SCULK).strength(4F).requiresTool().sounds(BlockSoundGroup.SCULK)), ModItemGroup.SPECIALBLOCK);
-
-    public static final Block ZELIUS_EGG = registerBlock("zelius_egg",
-            new Block(FabricBlockSettings.of(Material.EGG).strength(2F).requiresTool().sounds(BlockSoundGroup.SLIME)), ModItemGroup.SPECIALBLOCK);
-
     public static final Block SCULK_BONE = registerBlock("sculk_bone",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4F).requiresTool().sounds(BlockSoundGroup.BONE)), ItemGroup.DECORATIONS);
 
@@ -40,6 +31,9 @@ public class ModBlocks {
 
     public static final Block SCULK_VERIANT_EGG = registerBlock("sculk_veriant_egg",
             new Block(FabricBlockSettings.of(Material.SCULK).strength(4F).requiresTool().sounds(BlockSoundGroup.SLIME)), ModItemGroup.SPECIALBLOCK);
+
+    public static final Block ICE_AMETHYST_CLUSTER = registerBlock("ice_amethyst_cluster",
+            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(2.5F).requiresTool().sounds(BlockSoundGroup.AMETHYST_CLUSTER)), ModItemGroup.SPECIALBLOCK);
 
     public static final Block SCULKERING_FROGLIGHT = registerBlock("sculkering_froglight",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4F).requiresTool().sounds(BlockSoundGroup.STONE).sounds(BlockSoundGroup.SCULK)), ModItemGroup.SPECIALBLOCK);

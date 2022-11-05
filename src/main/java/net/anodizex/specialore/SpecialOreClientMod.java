@@ -11,8 +11,7 @@ import net.minecraft.client.render.RenderLayer;
 public class SpecialOreClientMod implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.ZELIUS_EGG);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.SCULK_COMPACT_EYE);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.ICE_AMETHYST_CLUSTER);
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.SCULK_SHURIKEN_PARTICLE, SculkShurikenParticle.Factory::new);
     }
