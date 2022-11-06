@@ -12,6 +12,8 @@ public enum ModToolMaterial implements ToolMaterial {
 
     DRAGON(2, 2031, 12.0F, 3.0F, 22, () -> {return Ingredient.ofItems(new ItemConvertible[]{ModItems.TIMASCUS_INGOT});}),
 
+    BEATIT(2, 2031, 12.0F, 3.0F, 22, () -> {return Ingredient.ofItems(new ItemConvertible[]{ModItems.TIMASCUS_INGOT});}),
+
     SCULK(2, 2031, 12.0F, 3.0F, 22, () -> {return Ingredient.ofItems(new ItemConvertible[]{ModItems.TIMASCUS_INGOT});});
 
 

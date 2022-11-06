@@ -15,6 +15,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
         TIMASCUS("timascus", 75, new int[]{2, 5, 7, 2}, 25,
                 SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F, 5.0F, () -> {return Ingredient.ofItems(new ItemConvertible[]{ModItems.TIMASCUS_INGOT});
         }),
+    BEATIT("beat_it", 75, new int[]{2, 5, 7, 2}, 25,
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 5.0F, () -> {return Ingredient.ofItems(new ItemConvertible[]{Items.LEATHER_CHESTPLATE});
+    }),
         DRAGON_TIMASCUS("dragon_timascus", 75, new int[]{3, 5, 7, 4}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F, 15F, () -> {return Ingredient.ofItems(new ItemConvertible[]{ModItems.TIMASCUS_INGOT});
         });
