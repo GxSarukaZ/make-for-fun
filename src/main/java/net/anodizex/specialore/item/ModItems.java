@@ -63,11 +63,11 @@ public class ModItems {
 
     public static final Item BEAT_IT_JACKET =registerItem("beat_it_jacket",
             new ArmorItem(ModArmorMaterials.BEATIT, EquipmentSlot.CHEST,
-                    new FabricItemSettings().group(ItemGroup.COMBAT)));
+                    new FabricItemSettings().group(ItemGroup.COMBAT).rarity(Rarity.EPIC)));
 
     public static final Item BEAT_IT_JACKET_SNAKE_SKIN =registerItem("beat_it_jacket_snake_skin",
-            new ArmorItem(ModArmorMaterials.BEATIT, EquipmentSlot.CHEST,
-                    new FabricItemSettings().group(ItemGroup.COMBAT)));
+            new ArmorItem(ModArmorMaterials.BEATITDRAGONFRAG, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ItemGroup.COMBAT).rarity(Rarity.EPIC)));
 
     public static final Item WARDEN_TENDRILL = registerItem("warden_tendrill",
             new Item(new FabricItemSettings().group(ItemGroup.MISC).rarity(Rarity.EPIC).maxCount(1)));
