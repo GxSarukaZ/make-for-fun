@@ -18,18 +18,6 @@ public enum ModArmorMaterials implements ArmorMaterial {
     BEATIT("beat_it", 75, new int[]{2, 5, 7, 2}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 5.0F, () -> {return Ingredient.ofItems(new ItemConvertible[]{Items.LEATHER_CHESTPLATE});
     }),
-
-    THISISIT("this_is_it", 75, new int[]{2, 5, 7, 2}, 25,
-            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F, 5.0F, () -> {return Ingredient.ofItems(new ItemConvertible[]{Items.LEATHER_CHESTPLATE});
-    }),
-
-    WITHER1("wither_first", 75, new int[]{2, 5, 7, 2}, 25,
-            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 5.0F, () -> {return Ingredient.ofItems(new ItemConvertible[]{Items.LEATHER_CHESTPLATE});
-    }),
-
-    WITHER2("wither_second", 75, new int[]{2, 5, 7, 2}, 25,
-            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 5.0F, () -> {return Ingredient.ofItems(new ItemConvertible[]{Items.LEATHER_CHESTPLATE});
-    }),
     BEATITDRAGONFRAG("beat_it_dragon_frag", 75, new int[]{2, 5, 7, 2}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 5.0F, () -> {return Ingredient.ofItems(new ItemConvertible[]{Items.LEATHER_CHESTPLATE});
     });
