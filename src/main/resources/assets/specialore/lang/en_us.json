@@ -45,6 +45,13 @@
   "enchantment.specialore.wither_impact":"Wither Impact",
   "enchantment.specialore.warden_impact":"Warden Impact",
   "enchantment.specialore.yokai_impact":"Yokai Impact",
+  "enchantment.specialore.renowned": "Renowned",
+  "item.specialore.beat_it_chest": "Beat It Chest",
+  "item.specialore.beat_it_snake": "Beat It Chest",
+  "item.specialore.beat_it_arms": "Beat It Arms",
+  "item.specialore.beat_it_snake_arms": "Beat It Arms",
+  "enchantment.specialore.witherited": "Witherited",
+  "enchantment.specialore.warester": "Warester",
 
   "effect.specialore.frostbite":"frostbite"
 }

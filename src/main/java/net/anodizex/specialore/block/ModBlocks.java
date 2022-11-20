@@ -38,6 +38,9 @@ public class ModBlocks {
     public static final Block SCULKERING_FROGLIGHT = registerBlock("sculkering_froglight",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4F).requiresTool().sounds(BlockSoundGroup.STONE).sounds(BlockSoundGroup.SCULK)), ModItemGroup.SPECIALBLOCK);
 
+    public static final Block DRAGON_REACTOR = registerBlock("dragon_reactor",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(100F).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.SPECIALBLOCK);
+
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK,new Identifier(SpecialOreMod.MOD_ID, name), block);

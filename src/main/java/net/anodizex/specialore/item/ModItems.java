@@ -69,6 +69,18 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.BEATITDRAGONFRAG, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ItemGroup.COMBAT).rarity(Rarity.EPIC)));
 
+    public static final Item BEAT_IT_CHEST =registerItem("beat_it_chest",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
+    public static final Item BEAT_IT_SNAKE =registerItem("beat_it_snake",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
+    public static final Item BEAT_IT_ARMS =registerItem("beat_it_arms",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
+    public static final Item BEAT_IT_SNAKE_ARMS =registerItem("beat_it_snake_arms",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
     public static final Item WARDEN_TENDRILL = registerItem("warden_tendrill",
             new Item(new FabricItemSettings().group(ItemGroup.MISC).rarity(Rarity.EPIC).maxCount(1)));
 

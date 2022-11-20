@@ -9,24 +9,14 @@ import net.minecraft.util.registry.Registry;
 
 public class ModEnchantments {
 
-    public static Enchantment THUNDER_STRIKE = register("thunder_strike",
-            new ThunderStrikeEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+    public static Enchantment RENOWNED = register("renowned",
+            new RenownedEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.ARMOR, EquipmentSlot.MAINHAND));
 
-    public static Enchantment IMPLOSION = register("implosion",
-            new ImplosionEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
+    public static Enchantment WITHERITED = register("witherited",
+            new WitheritedEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.ARMOR, EquipmentSlot.MAINHAND));
 
-    public static Enchantment ZOMBIE_IMPACT = register("zombie_impact",
-            new ZombieImpactEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-
-    public static Enchantment WITHER_IMPACT = register("wither_impact",
-            new WitherImpactEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-
-    public static Enchantment WARDEN_IMPACT = register("warden_impact",
-            new WardenImpactEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-
-    public static Enchantment YOKAI_IMPACT = register("yokai_impact",
-            new YokaiImpactEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-
+    public static Enchantment WARESTER = register("warester",
+            new WaresterEnchanment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.ARMOR, EquipmentSlot.MAINHAND));
 
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(SpecialOreMod.MOD_ID,name), enchantment);

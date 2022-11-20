@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "X": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "X X",
+    " # ",
+    "   "
+  ],
+  "result": {
+    "item": "specialore:beat_it_chest"
+  }
+}
