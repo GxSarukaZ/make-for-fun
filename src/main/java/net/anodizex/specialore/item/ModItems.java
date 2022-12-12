@@ -1,6 +1,7 @@
 package net.anodizex.specialore.item;
 
 import net.anodizex.specialore.SpecialOreMod;
+import net.anodizex.specialore.entity.ModEntities;
 import net.anodizex.specialore.item.custom.ModAxeItem;
 import net.anodizex.specialore.item.custom.ModHoeItem;
 import net.anodizex.specialore.item.custom.ModPickaxeItem;
@@ -80,9 +81,9 @@ public class ModItems {
 
     public static final Item BEAT_IT_SNAKE_ARMS =registerItem("beat_it_snake_arms",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-
-    public static final Item WARDEN_TENDRILL = registerItem("warden_tendrill",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC).rarity(Rarity.EPIC).maxCount(1)));
+    public static final Item TARANTULA_SPAWN_EGG = registerItem("tarantula_spawn_egg",
+            new SpawnEggItem(ModEntities.TARANTULA_ELECTRIC_BLUE,0x2f04be, 0x030303,
+                    new FabricItemSettings().group(ModItemGroup.TIMASCUS)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM,new Identifier(SpecialOreMod.MOD_ID, name),item);

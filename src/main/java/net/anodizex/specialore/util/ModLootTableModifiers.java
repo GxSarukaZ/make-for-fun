@@ -1,7 +1,9 @@
 package net.anodizex.specialore.util;
 
+import net.anodizex.specialore.enchantment.ModEnchantments;
 import net.anodizex.specialore.item.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.MatchToolLootCondition;
@@ -16,7 +18,7 @@ import net.minecraft.util.Identifier;
 public class ModLootTableModifiers {
 
     private static final Identifier ANCIENT_CITY_STRUCTURE_ID
-            = new Identifier("minecraft","chest/ancient_city_ice_box");
+            = new Identifier("minecraft","chest/ancient_city");
 
     private static final Identifier ANCIENT_CITY_STRUCTURE_ID_2
             = new Identifier("minecraft","chest/ancient_city_ice_box");
@@ -28,6 +30,12 @@ public class ModLootTableModifiers {
             =new Identifier("minecraft","chest/village/village_weaponsmith");
     private static final Identifier JUNGLE_TEMPLE_STRUCTURE_ID
             =new Identifier("minecraft","chests/jungle_temple_dispenser");
+
+    private static final Identifier NETHER_CHEST_ID
+            =new Identifier("minecraft","chests/bastion_treasure");
+
+    private static final Identifier DRAGON_LOOTING_ID
+            =new Identifier("minecraft","chest/end_city_treasure");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -80,6 +88,36 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(1f))
                         .with(ItemEntry.builder(ModItems.FLYFIRE_IN_BOTTLE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+        });
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if (NETHER_CHEST_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder((ItemConvertible) ModEnchantments.WITHERITED))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+        });
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if (DRAGON_LOOTING_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder((ItemConvertible) ModEnchantments.RENOWNED))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+        });
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if (ANCIENT_CITY_STRUCTURE_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder((ItemConvertible) ModEnchantments.WARESTER))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }

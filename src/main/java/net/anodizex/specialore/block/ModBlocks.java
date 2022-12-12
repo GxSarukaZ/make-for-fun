@@ -29,17 +29,6 @@ public class ModBlocks {
     public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4F).requiresTool().sounds(BlockSoundGroup.STONE)), ModItemGroup.SPECIALBLOCK);
 
-    public static final Block SCULK_VERIANT_EGG = registerBlock("sculk_veriant_egg",
-            new Block(FabricBlockSettings.of(Material.SCULK).strength(4F).requiresTool().sounds(BlockSoundGroup.SLIME)), ModItemGroup.SPECIALBLOCK);
-
-    public static final Block ICE_AMETHYST_CLUSTER = registerBlock("ice_amethyst_cluster",
-            new Block(FabricBlockSettings.of(Material.AMETHYST).strength(2.5F).requiresTool().sounds(BlockSoundGroup.AMETHYST_CLUSTER)), ModItemGroup.SPECIALBLOCK);
-
-    public static final Block SCULKERING_FROGLIGHT = registerBlock("sculkering_froglight",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4F).requiresTool().sounds(BlockSoundGroup.STONE).sounds(BlockSoundGroup.SCULK)), ModItemGroup.SPECIALBLOCK);
-
-    public static final Block DRAGON_REACTOR = registerBlock("dragon_reactor",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(100F).requiresTool().sounds(BlockSoundGroup.METAL)), ModItemGroup.SPECIALBLOCK);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

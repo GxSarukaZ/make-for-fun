@@ -53,5 +53,7 @@
   "enchantment.specialore.witherited": "Witherited",
   "enchantment.specialore.warester": "Warester",
 
-  "effect.specialore.frostbite":"frostbite"
+  "effect.specialore.frostbite":"frostbite",
+
+  "item.specialore.tarantula_spawn_egg": "Tarantula Spawn Egg"
 }

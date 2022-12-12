@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.anodizex.specialore.SpecialOreMod"
+    ],
+    "client": [
+      "net.anodizex.specialore.SpecialOreClientMod"
     ]
   },
   "mixins": [
