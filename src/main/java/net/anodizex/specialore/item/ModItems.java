@@ -85,6 +85,16 @@ public class ModItems {
             new SpawnEggItem(ModEntities.TARANTULA_ELECTRIC_BLUE,0x2f04be, 0x030303,
                     new FabricItemSettings().group(ModItemGroup.TIMASCUS)));
 
+    public static final Item KISANE_MIKO_SPAWN_EGG = registerItem("kisane_miko_spawn_egg",
+            new SpawnEggItem(ModEntities.KISANE_MIKO,0xd42f2f, 0x01fd08,
+                    new FabricItemSettings().group(ItemGroup.MISC)));
+
+    public static final Item SCULK_IRON_INGOT = registerItem("sculk_iron_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.TIMASCUS)));
+
+    public static final Item SCULK_GOLD_INGOT = registerItem("sculk_gold_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.TIMASCUS)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM,new Identifier(SpecialOreMod.MOD_ID, name),item);
     }

@@ -33,5 +33,6 @@ public class SpecialOreMod implements ModInitializer {
 		GeckoLib.initialize();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.TARANTULA_ELECTRIC_BLUE, TarantulaElectricBlueEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.KISANE_MIKO, TarantulaElectricBlueEntity.setAttributes());
 	}
 }
